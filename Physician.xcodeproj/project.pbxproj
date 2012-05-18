@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35214C861566FC2100430E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C851566FC2100430E29 /* UIKit.framework */; };
+		35214C881566FC2100430E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C871566FC2100430E29 /* Foundation.framework */; };
+		35214C8A1566FC2100430E29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C891566FC2100430E29 /* CoreGraphics.framework */; };
+		35214C8C1566FC2100430E29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C8B1566FC2100430E29 /* CoreData.framework */; };
+		35214C921566FC2100430E29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35214C901566FC2100430E29 /* InfoPlist.strings */; };
+		35214C941566FC2200430E29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214C931566FC2200430E29 /* main.m */; };
+		35214C981566FC2200430E29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214C971566FC2200430E29 /* AppDelegate.m */; };
+		35214C9B1566FC2200430E29 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35214C991566FC2200430E29 /* MainStoryboard.storyboard */; };
+		35214C9E1566FC2200430E29 /* Physician.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35214C9C1566FC2200430E29 /* Physician.xcdatamodeld */; };
+		35214CA11566FC2200430E29 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214CA01566FC2200430E29 /* MasterViewController.m */; };
+		35214CA41566FC2200430E29 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214CA31566FC2200430E29 /* DetailViewController.m */; };
+		35214CAC1566FC2200430E29 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214CAB1566FC2200430E29 /* SenTestingKit.framework */; };
+		35214CAD1566FC2200430E29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C851566FC2100430E29 /* UIKit.framework */; };
+		35214CAE1566FC2200430E29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C871566FC2100430E29 /* Foundation.framework */; };
+		35214CAF1566FC2200430E29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C8B1566FC2100430E29 /* CoreData.framework */; };
+		35214CB71566FC2200430E29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35214CB51566FC2200430E29 /* InfoPlist.strings */; };
+		35214CBA1566FC2200430E29 /* PhysicianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214CB91566FC2200430E29 /* PhysicianTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35214CB01566FC2200430E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35214C781566FC2100430E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35214C801566FC2100430E29;
+			remoteInfo = Physician;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35214C811566FC2100430E29 /* Physician.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Physician.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35214C851566FC2100430E29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		35214C871566FC2100430E29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		35214C891566FC2100430E29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		35214C8B1566FC2100430E29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		35214C8F1566FC2100430E29 /* Physician-Info.plist */ = {isa = PBXFileReference; path = "Physician-Info.plist"; sourceTree = "<group>"; };
+		35214C911566FC2100430E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35214C931566FC2200430E29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35214C951566FC2200430E29 /* Physician-Prefix.pch */ = {isa = PBXFileReference; path = "Physician-Prefix.pch"; sourceTree = "<group>"; };
+		35214C961566FC2200430E29 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		35214C971566FC2200430E29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35214C9A1566FC2200430E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		35214C9D1566FC2200430E29 /* Physician.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Physician.xcdatamodel; sourceTree = "<group>"; };
+		35214C9F1566FC2200430E29 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		35214CA01566FC2200430E29 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		35214CA21566FC2200430E29 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		35214CA31566FC2200430E29 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		35214CAA1566FC2200430E29 /* PhysicianTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhysicianTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35214CAB1566FC2200430E29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		35214CB41566FC2200430E29 /* PhysicianTests-Info.plist */ = {isa = PBXFileReference; path = "PhysicianTests-Info.plist"; sourceTree = "<group>"; };
+		35214CB61566FC2200430E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		35214CB81566FC2200430E29 /* PhysicianTests.h */ = {isa = PBXFileReference; path = PhysicianTests.h; sourceTree = "<group>"; };
+		35214CB91566FC2200430E29 /* PhysicianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicianTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35214C7E1566FC2100430E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35214C861566FC2100430E29 /* UIKit.framework in Frameworks */,
+				35214C881566FC2100430E29 /* Foundation.framework in Frameworks */,
+				35214C8A1566FC2100430E29 /* CoreGraphics.framework in Frameworks */,
+				35214C8C1566FC2100430E29 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35214CA61566FC2200430E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35214CAC1566FC2200430E29 /* SenTestingKit.framework in Frameworks */,
+				35214CAD1566FC2200430E29 /* UIKit.framework in Frameworks */,
+				35214CAE1566FC2200430E29 /* Foundation.framework in Frameworks */,
+				35214CAF1566FC2200430E29 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35214C761566FC2100430E29 = {
+			isa = PBXGroup;
+			children = (
+				35214C8D1566FC2100430E29 /* Physician */,
+				35214CB21566FC2200430E29 /* PhysicianTests */,
+				35214C841566FC2100430E29 /* Frameworks */,
+				35214C821566FC2100430E29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35214C821566FC2100430E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35214C811566FC2100430E29 /* Physician.app */,
+				35214CAA1566FC2200430E29 /* PhysicianTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35214C841566FC2100430E29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35214C851566FC2100430E29 /* UIKit.framework */,
+				35214C871566FC2100430E29 /* Foundation.framework */,
+				35214C891566FC2100430E29 /* CoreGraphics.framework */,
+				35214C8B1566FC2100430E29 /* CoreData.framework */,
+				35214CAB1566FC2200430E29 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35214C8D1566FC2100430E29 /* Physician */ = {
+			isa = PBXGroup;
+			children = (
+				35214C961566FC2200430E29 /* AppDelegate.h */,
+				35214C971566FC2200430E29 /* AppDelegate.m */,
+				35214C991566FC2200430E29 /* MainStoryboard.storyboard */,
+				35214C9F1566FC2200430E29 /* MasterViewController.h */,
+				35214CA01566FC2200430E29 /* MasterViewController.m */,
+				35214CA21566FC2200430E29 /* DetailViewController.h */,
+				35214CA31566FC2200430E29 /* DetailViewController.m */,
+				35214C9C1566FC2200430E29 /* Physician.xcdatamodeld */,
+				35214C8E1566FC2100430E29 /* Supporting Files */,
+			);
+			path = Physician;
+			sourceTree = "<group>";
+		};
+		35214C8E1566FC2100430E29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35214C8F1566FC2100430E29 /* Physician-Info.plist */,
+				35214C901566FC2100430E29 /* InfoPlist.strings */,
+				35214C931566FC2200430E29 /* main.m */,
+				35214C951566FC2200430E29 /* Physician-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35214CB21566FC2200430E29 /* PhysicianTests */ = {
+			isa = PBXGroup;
+			children = (
+				35214CB81566FC2200430E29 /* PhysicianTests.h */,
+				35214CB91566FC2200430E29 /* PhysicianTests.m */,
+				35214CB31566FC2200430E29 /* Supporting Files */,
+			);
+			path = PhysicianTests;
+			sourceTree = "<group>";
+		};
+		35214CB31566FC2200430E29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35214CB41566FC2200430E29 /* PhysicianTests-Info.plist */,
+				35214CB51566FC2200430E29 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35214C801566FC2100430E29 /* Physician */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35214CBD1566FC2200430E29 /* Build configuration list for PBXNativeTarget "Physician" */;
+			buildPhases = (
+				35214C7D1566FC2100430E29 /* Sources */,
+				35214C7E1566FC2100430E29 /* Frameworks */,
+				35214C7F1566FC2100430E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Physician;
+			productName = Physician;
+			productReference = 35214C811566FC2100430E29 /* Physician.app */;
+			productType = "com.apple.product-type.application";
+		};
+		35214CA91566FC2200430E29 /* PhysicianTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35214CC01566FC2200430E29 /* Build configuration list for PBXNativeTarget "PhysicianTests" */;
+			buildPhases = (
+				35214CA51566FC2200430E29 /* Sources */,
+				35214CA61566FC2200430E29 /* Frameworks */,
+				35214CA71566FC2200430E29 /* Resources */,
+				35214CA81566FC2200430E29 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35214CB11566FC2200430E29 /* PBXTargetDependency */,
+			);
+			name = PhysicianTests;
+			productName = PhysicianTests;
+			productReference = 35214CAA1566FC2200430E29 /* PhysicianTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35214C781566FC2100430E29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 35214C7B1566FC2100430E29 /* Build configuration list for PBXProject "Physician" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35214C761566FC2100430E29;
+			productRefGroup = 35214C821566FC2100430E29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35214C801566FC2100430E29 /* Physician */,
+				35214CA91566FC2200430E29 /* PhysicianTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35214C7F1566FC2100430E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35214C921566FC2100430E29 /* InfoPlist.strings in Resources */,
+				35214C9B1566FC2200430E29 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35214CA71566FC2200430E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35214CB71566FC2200430E29 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35214CA81566FC2200430E29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35214C7D1566FC2100430E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35214C941566FC2200430E29 /* main.m in Sources */,
+				35214C981566FC2200430E29 /* AppDelegate.m in Sources */,
+				35214C9E1566FC2200430E29 /* Physician.xcdatamodeld in Sources */,
+				35214CA11566FC2200430E29 /* MasterViewController.m in Sources */,
+				35214CA41566FC2200430E29 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35214CA51566FC2200430E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35214CBA1566FC2200430E29 /* PhysicianTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35214CB11566FC2200430E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35214C801566FC2100430E29 /* Physician */;
+			targetProxy = 35214CB01566FC2200430E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		35214C901566FC2100430E29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35214C911566FC2100430E29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		35214C991566FC2200430E29 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35214C9A1566FC2200430E29 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		35214CB51566FC2200430E29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35214CB61566FC2200430E29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35214CBB1566FC2200430E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		35214CBC1566FC2200430E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35214CBE1566FC2200430E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Physician/Physician-Prefix.pch";
+				INFOPLIST_FILE = "Physician/Physician-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		35214CBF1566FC2200430E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Physician/Physician-Prefix.pch";
+				INFOPLIST_FILE = "Physician/Physician-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		35214CC11566FC2200430E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Physician.app/Physician";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Physician/Physician-Prefix.pch";
+				INFOPLIST_FILE = "PhysicianTests/PhysicianTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		35214CC21566FC2200430E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Physician.app/Physician";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Physician/Physician-Prefix.pch";
+				INFOPLIST_FILE = "PhysicianTests/PhysicianTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35214C7B1566FC2100430E29 /* Build configuration list for PBXProject "Physician" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35214CBB1566FC2200430E29 /* Debug */,
+				35214CBC1566FC2200430E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35214CBD1566FC2200430E29 /* Build configuration list for PBXNativeTarget "Physician" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35214CBE1566FC2200430E29 /* Debug */,
+				35214CBF1566FC2200430E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		35214CC01566FC2200430E29 /* Build configuration list for PBXNativeTarget "PhysicianTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35214CC11566FC2200430E29 /* Debug */,
+				35214CC21566FC2200430E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		35214C9C1566FC2200430E29 /* Physician.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				35214C9D1566FC2200430E29 /* Physician.xcdatamodel */,
+			);
+			currentVersion = 35214C9D1566FC2200430E29 /* Physician.xcdatamodel */;
+			path = Physician.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 35214C781566FC2100430E29 /* Project object */;
+}
