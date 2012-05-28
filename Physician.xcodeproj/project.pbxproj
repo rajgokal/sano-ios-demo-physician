@@ -24,6 +24,20 @@
 		35214CAF1566FC2200430E29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35214C8B1566FC2100430E29 /* CoreData.framework */; };
 		35214CB71566FC2200430E29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35214CB51566FC2200430E29 /* InfoPlist.strings */; };
 		35214CBA1566FC2200430E29 /* PhysicianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214CB91566FC2200430E29 /* PhysicianTests.m */; };
+		35214CC51566FFFB00430E29 /* PatientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214CC41566FFFB00430E29 /* PatientCell.m */; };
+		35214CC81567010E00430E29 /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214CC71567010E00430E29 /* MyManager.m */; };
+		35214CCB1567020F00430E29 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214CCA1567020F00430E29 /* Patient.m */; };
+		35214CCF15670DA600430E29 /* Indicator Spot - Green.png in Resources */ = {isa = PBXBuildFile; fileRef = 35214CCC15670DA600430E29 /* Indicator Spot - Green.png */; };
+		35214CD015670DA600430E29 /* Indicator Spot - Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 35214CCD15670DA600430E29 /* Indicator Spot - Red.png */; };
+		35214CD115670DA600430E29 /* Indicator Spot - Yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 35214CCE15670DA600430E29 /* Indicator Spot - Yellow.png */; };
+		35214D49156D79FF00430E29 /* ASBSparkLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35214D48156D79FF00430E29 /* ASBSparkLineView.m */; };
+		35214D54156D7AE100430E29 /* Doxyfile in Resources */ = {isa = PBXBuildFile; fileRef = 35214D4A156D7AE000430E29 /* Doxyfile */; };
+		35214D55156D7AE100430E29 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 35214D4B156D7AE000430E29 /* README */; };
+		35214D56156D7AE100430E29 /* glucose_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35214D4C156D7AE000430E29 /* glucose_data.txt */; };
+		35214D57156D7AE100430E29 /* heartRate_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35214D4D156D7AE000430E29 /* heartRate_data.txt */; };
+		35214D58156D7AE100430E29 /* temperature_data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 35214D4E156D7AE000430E29 /* temperature_data.txt */; };
+		3583441115701E6200362210 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583440E15701E2B00362210 /* libCorePlot-CocoaTouch.a */; };
+		3583441315701EF200362210 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3583441215701EF200362210 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,27 @@
 			remoteGlobalIDString = 35214C801566FC2100430E29;
 			remoteInfo = Physician;
 		};
+		35214D44156D6F2600430E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35214D3C156D6F2600430E29 /* Sparklines.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A182206114062C1F0061AB1A;
+			remoteInfo = Sparklines;
+		};
+		3583440D15701E2B00362210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583440415701E2B00362210 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		3583440F15701E5B00362210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3583440415701E2B00362210 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -42,24 +77,43 @@
 		35214C871566FC2100430E29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		35214C891566FC2100430E29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		35214C8B1566FC2100430E29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		35214C8F1566FC2100430E29 /* Physician-Info.plist */ = {isa = PBXFileReference; path = "Physician-Info.plist"; sourceTree = "<group>"; };
+		35214C8F1566FC2100430E29 /* Physician-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Physician-Info.plist"; sourceTree = "<group>"; };
 		35214C911566FC2100430E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		35214C931566FC2200430E29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		35214C951566FC2200430E29 /* Physician-Prefix.pch */ = {isa = PBXFileReference; path = "Physician-Prefix.pch"; sourceTree = "<group>"; };
-		35214C961566FC2200430E29 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		35214C951566FC2200430E29 /* Physician-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Physician-Prefix.pch"; sourceTree = "<group>"; };
+		35214C961566FC2200430E29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35214C971566FC2200430E29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		35214C9A1566FC2200430E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		35214C9D1566FC2200430E29 /* Physician.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Physician.xcdatamodel; sourceTree = "<group>"; };
-		35214C9F1566FC2200430E29 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		35214C9F1566FC2200430E29 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		35214CA01566FC2200430E29 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		35214CA21566FC2200430E29 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		35214CA21566FC2200430E29 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		35214CA31566FC2200430E29 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		35214CAA1566FC2200430E29 /* PhysicianTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhysicianTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35214CAB1566FC2200430E29 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		35214CB41566FC2200430E29 /* PhysicianTests-Info.plist */ = {isa = PBXFileReference; path = "PhysicianTests-Info.plist"; sourceTree = "<group>"; };
+		35214CB41566FC2200430E29 /* PhysicianTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhysicianTests-Info.plist"; sourceTree = "<group>"; };
 		35214CB61566FC2200430E29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		35214CB81566FC2200430E29 /* PhysicianTests.h */ = {isa = PBXFileReference; path = PhysicianTests.h; sourceTree = "<group>"; };
+		35214CB81566FC2200430E29 /* PhysicianTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicianTests.h; sourceTree = "<group>"; };
 		35214CB91566FC2200430E29 /* PhysicianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicianTests.m; sourceTree = "<group>"; };
+		35214CC31566FFFB00430E29 /* PatientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientCell.h; sourceTree = "<group>"; };
+		35214CC41566FFFB00430E29 /* PatientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientCell.m; sourceTree = "<group>"; };
+		35214CC61567010E00430E29 /* MyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyManager.h; sourceTree = "<group>"; };
+		35214CC71567010E00430E29 /* MyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyManager.m; sourceTree = "<group>"; };
+		35214CC91567020F00430E29 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		35214CCA1567020F00430E29 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		35214CCC15670DA600430E29 /* Indicator Spot - Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Indicator Spot - Green.png"; sourceTree = "<group>"; };
+		35214CCD15670DA600430E29 /* Indicator Spot - Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Indicator Spot - Red.png"; sourceTree = "<group>"; };
+		35214CCE15670DA600430E29 /* Indicator Spot - Yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Indicator Spot - Yellow.png"; sourceTree = "<group>"; };
+		35214D3C156D6F2600430E29 /* Sparklines.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sparklines.xcodeproj; path = ../../../Sparklines/Sparklines.xcodeproj; sourceTree = "<group>"; };
+		35214D47156D79FF00430E29 /* ASBSparkLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBSparkLineView.h; sourceTree = "<group>"; };
+		35214D48156D79FF00430E29 /* ASBSparkLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBSparkLineView.m; sourceTree = "<group>"; };
+		35214D4A156D7AE000430E29 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Doxyfile; path = ../../../Sparklines/Doxyfile; sourceTree = "<group>"; };
+		35214D4B156D7AE000430E29 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = ../../../Sparklines/README; sourceTree = "<group>"; };
+		35214D4C156D7AE000430E29 /* glucose_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = glucose_data.txt; path = ../../../Sparklines/Sparklines/glucose_data.txt; sourceTree = "<group>"; };
+		35214D4D156D7AE000430E29 /* heartRate_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = heartRate_data.txt; path = ../../../Sparklines/Sparklines/heartRate_data.txt; sourceTree = "<group>"; };
+		35214D4E156D7AE000430E29 /* temperature_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = temperature_data.txt; path = ../../../Sparklines/Sparklines/temperature_data.txt; sourceTree = "<group>"; };
+		3583440415701E2B00362210 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../../CorePlot/Source/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		3583441215701EF200362210 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +121,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3583441315701EF200362210 /* QuartzCore.framework in Frameworks */,
 				35214C861566FC2100430E29 /* UIKit.framework in Frameworks */,
 				35214C881566FC2100430E29 /* Foundation.framework in Frameworks */,
 				35214C8A1566FC2100430E29 /* CoreGraphics.framework in Frameworks */,
 				35214C8C1566FC2100430E29 /* CoreData.framework in Frameworks */,
+				3583441115701E6200362210 /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +166,7 @@
 		35214C841566FC2100430E29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3583441215701EF200362210 /* QuartzCore.framework */,
 				35214C851566FC2100430E29 /* UIKit.framework */,
 				35214C871566FC2100430E29 /* Foundation.framework */,
 				35214C891566FC2100430E29 /* CoreGraphics.framework */,
@@ -127,9 +184,16 @@
 				35214C991566FC2200430E29 /* MainStoryboard.storyboard */,
 				35214C9F1566FC2200430E29 /* MasterViewController.h */,
 				35214CA01566FC2200430E29 /* MasterViewController.m */,
+				35214CC61567010E00430E29 /* MyManager.h */,
+				35214CC71567010E00430E29 /* MyManager.m */,
+				35214CC91567020F00430E29 /* Patient.h */,
+				35214CCA1567020F00430E29 /* Patient.m */,
+				35214CC31566FFFB00430E29 /* PatientCell.h */,
+				35214CC41566FFFB00430E29 /* PatientCell.m */,
 				35214CA21566FC2200430E29 /* DetailViewController.h */,
 				35214CA31566FC2200430E29 /* DetailViewController.m */,
 				35214C9C1566FC2200430E29 /* Physician.xcdatamodeld */,
+				35214D46156D79FE00430E29 /* Custom View */,
 				35214C8E1566FC2100430E29 /* Supporting Files */,
 			);
 			path = Physician;
@@ -138,6 +202,16 @@
 		35214C8E1566FC2100430E29 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3583440415701E2B00362210 /* CorePlot-CocoaTouch.xcodeproj */,
+				35214D3C156D6F2600430E29 /* Sparklines.xcodeproj */,
+				35214D4A156D7AE000430E29 /* Doxyfile */,
+				35214D4B156D7AE000430E29 /* README */,
+				35214D4C156D7AE000430E29 /* glucose_data.txt */,
+				35214D4D156D7AE000430E29 /* heartRate_data.txt */,
+				35214D4E156D7AE000430E29 /* temperature_data.txt */,
+				35214CCC15670DA600430E29 /* Indicator Spot - Green.png */,
+				35214CCD15670DA600430E29 /* Indicator Spot - Red.png */,
+				35214CCE15670DA600430E29 /* Indicator Spot - Yellow.png */,
 				35214C8F1566FC2100430E29 /* Physician-Info.plist */,
 				35214C901566FC2100430E29 /* InfoPlist.strings */,
 				35214C931566FC2200430E29 /* main.m */,
@@ -165,6 +239,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		35214D3D156D6F2600430E29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35214D45156D6F2600430E29 /* Sparklines.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35214D46156D79FE00430E29 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				35214D47156D79FF00430E29 /* ASBSparkLineView.h */,
+				35214D48156D79FF00430E29 /* ASBSparkLineView.m */,
+			);
+			name = "Custom View";
+			path = ../../../Sparklines/Sparklines;
+			sourceTree = "<group>";
+		};
+		3583440515701E2B00362210 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3583440E15701E2B00362210 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,6 +279,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3583441015701E5B00362210 /* PBXTargetDependency */,
 			);
 			name = Physician;
 			productName = Physician;
@@ -222,6 +323,16 @@
 			mainGroup = 35214C761566FC2100430E29;
 			productRefGroup = 35214C821566FC2100430E29 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3583440515701E2B00362210 /* Products */;
+					ProjectRef = 3583440415701E2B00362210 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+				{
+					ProductGroup = 35214D3D156D6F2600430E29 /* Products */;
+					ProjectRef = 35214D3C156D6F2600430E29 /* Sparklines.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				35214C801566FC2100430E29 /* Physician */,
@@ -230,6 +341,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		35214D45156D6F2600430E29 /* Sparklines.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Sparklines.app;
+			remoteRef = 35214D44156D6F2600430E29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3583440E15701E2B00362210 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = 3583440D15701E2B00362210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		35214C7F1566FC2100430E29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -237,6 +365,14 @@
 			files = (
 				35214C921566FC2100430E29 /* InfoPlist.strings in Resources */,
 				35214C9B1566FC2200430E29 /* MainStoryboard.storyboard in Resources */,
+				35214CCF15670DA600430E29 /* Indicator Spot - Green.png in Resources */,
+				35214CD015670DA600430E29 /* Indicator Spot - Red.png in Resources */,
+				35214CD115670DA600430E29 /* Indicator Spot - Yellow.png in Resources */,
+				35214D54156D7AE100430E29 /* Doxyfile in Resources */,
+				35214D55156D7AE100430E29 /* README in Resources */,
+				35214D56156D7AE100430E29 /* glucose_data.txt in Resources */,
+				35214D57156D7AE100430E29 /* heartRate_data.txt in Resources */,
+				35214D58156D7AE100430E29 /* temperature_data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +412,10 @@
 				35214C9E1566FC2200430E29 /* Physician.xcdatamodeld in Sources */,
 				35214CA11566FC2200430E29 /* MasterViewController.m in Sources */,
 				35214CA41566FC2200430E29 /* DetailViewController.m in Sources */,
+				35214CC51566FFFB00430E29 /* PatientCell.m in Sources */,
+				35214CC81567010E00430E29 /* MyManager.m in Sources */,
+				35214CCB1567020F00430E29 /* Patient.m in Sources */,
+				35214D49156D79FF00430E29 /* ASBSparkLineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +434,11 @@
 			isa = PBXTargetDependency;
 			target = 35214C801566FC2100430E29 /* Physician */;
 			targetProxy = 35214CB01566FC2200430E29 /* PBXContainerItemProxy */;
+		};
+		3583441015701E5B00362210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = 3583440F15701E5B00362210 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -377,7 +522,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Physician/Physician-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/Raj/Documents/Work/CorePlot/Source/framework/**";
 				INFOPLIST_FILE = "Physician/Physician-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -388,7 +535,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Physician/Physician-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/Raj/Documents/Work/CorePlot/Source/framework/**";
 				INFOPLIST_FILE = "Physician/Physician-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -447,6 +596,7 @@
 				35214CBF1566FC2200430E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35214CC01566FC2200430E29 /* Build configuration list for PBXNativeTarget "PhysicianTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +605,7 @@
 				35214CC21566FC2200430E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

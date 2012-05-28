@@ -7,8 +7,12 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
+#import "PatientCell.h"
+#import "MyManager.h"
+#import "Patient.h"
+
+#import "ASBSparkLineView.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -38,6 +42,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     // Set up the edit and add buttons.
@@ -88,19 +93,33 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [[self.fetchedResultsController sections] objectAtIndex:section];
-    return [sectionInfo numberOfObjects];
+    MyManager *sharedManager = [MyManager sharedManager];
+    return [sharedManager.patients count];
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Prototype";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    [self configureCell:cell atIndexPath:indexPath];
+    PatientCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[PatientCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    MyManager *sharedManager = [MyManager sharedManager];
+    Patient *current = [sharedManager.patients objectAtIndex:indexPath.row];
+    cell.Title.text = [current name];
+    cell.Icon.image = [UIImage imageNamed:[current iconGrabber]];
+    cell.Value.text = [NSString stringWithFormat:@"%d", [current input]];
+    cell.Value.textColor = [current colorGrabber];
+    cell.State.textColor = [current colorGrabber];
+    cell.Unit.text = [current unit];
+    cell.State.text = [current stateGrabber];
+    cell.StateStatus.text = [current stateStatusGrabber];
+    
     return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -140,7 +159,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    MyManager *sharedManager = [MyManager sharedManager];
+    NSIndexPath *path =  indexPath;
+    int row = [path row];
+    Patient *s = [sharedManager.patients objectAtIndex:row];
+    Patient *selectedObject = s;
     self.detailViewController.detailItem = selectedObject;    
 }
 
